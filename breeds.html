@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta 
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>PetsPaw</title>
+  <link
+    rel="shortcut icon"
+    type="image/png"
+    href="./images/favicon.png"
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="./main.css"> -->
+<script defer src="vendors-node_modules_axios_index_js-node_modules_css-loader_dist_runtime_api_js-node_modules_-11790e.js"></script><script defer src="src_styles_style_scss-src_js_axiosConfig_js.js"></script><script defer src="breeds.js"></script></head>
+<body class="page__body">
+  <section class="page__section">
+    <a href="./index.html" class="page__logo link">
+      <img 
+        class="page__logo__image"
+        src="./images/logo.svg"
+        alt="PetsPaw"
+      >
+    </a>
+
+    <div class="page__section__left-container">
+      <h2 class="title">Hi intern!</h2>
+      <p class="subtitle">Welcome to MI 2022 Front-end test</p>
+      <h3 class="card-title">Lets start using The Cat API</h3>
+  
+      <div class="cards-container">
+        <a href="./voting.html" class="cards-container__card">
+          <img 
+            class="cards-container__img card-voting"
+            src="./images/vote-table.svg"
+            alt="Calendar"
+          >
+
+          <button class="cards-container__button">
+            Voting
+          </button>
+        </a>
+
+        <a href="./breeds.html" class="cards-container__card cards-container__card--active">
+          <img 
+            class="cards-container__img card-breeds"
+            src="./images/pet-breeds.svg"
+            alt="Cat"
+          >
+
+          <button class="cards-container__button">
+            Breeds
+          </button>
+        </a>
+
+        <a href="./gallery.html" class="cards-container__card">
+          <img 
+            class="cards-container__img card-gallery"
+            src="./images/images-search.svg"
+            alt="Phone"
+          >
+
+          <button class="cards-container__button">
+            Gallery
+          </button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="page__section">    
+    <div class="page__section__right-container">
+      <div class="search-panel">
+        <form
+          action="#"
+          method="post"
+          class="search-panel__form"
+        >
+          <input
+            name="search-field"
+            type="text"
+            placeholder="Search for breeds by name"
+            class="search-panel__field"
+          >
+
+          <button type="submit" class="search-panel__button">
+            <img 
+              src="./images/icons/search-20.svg"
+              alt="search"
+              class="search-panel__button__img"
+            >
+
+            <img 
+              src="./images/icons/search-white-20.svg"
+              alt="search"
+              class="search-panel__button__img--white"
+            >
+          </button>
+        </form>
+
+        <a href="#" class="search-panel__icon link">
+          <img 
+            src="./images/icons/like-30.svg"
+            alt="like"
+            class="search-panel__img"
+          >
+
+          <img 
+            src="./images/icons/like-white-30.svg"
+            alt="like"
+            class="
+              search-panel__img
+              search-panel__img--white
+            "
+          >
+        </a>
+
+        <a href="#" class="search-panel__icon link">
+          <img 
+            src="./images/icons/fav-30.svg"
+            alt="heart"
+            class="search-panel__img"
+          >
+
+          <img 
+            src="./images/icons/fav-full-white-30.svg"
+            alt="like"
+            class="
+              search-panel__img
+              search-panel__img--white
+            "
+          >
+        </a>
+
+        <a href="#" class="search-panel__icon link">
+          <img 
+            src="./images/icons/dislike-30.svg"
+            alt="dislike"
+            class="search-panel__img"
+          >
+
+          <img 
+            src="./images/icons/dislike-white-30.svg"
+            alt="like"
+            class="
+              search-panel__img 
+              search-panel__img--white
+            "
+          >
+        </a>
+      </div>
+
+      <div class="content-container">
+        <div class="content-container__panel">
+          <div class="content-container__back">
+            <a href="./index.html" class="back-home link">
+              <img 
+                src="./images/icons/back-20.svg"
+                alt="back button"
+                class="back-home__button"
+              >
+
+              <img 
+                src="./images/icons/back-white-20.svg"
+                alt="back button"
+                class="back-home__button back-home__button--white"
+              >
+            </a>
+  
+            <span class="chapter">Breeds</span>
+          </div>
+
+          <select name="breeds-list" class="breeds-list hover-effect">
+            <option>All breeds</option>
+            <option>Abyssinian</option>
+            <option>Aegean</option>
+            <option>American Bobtail</option>
+            <option>American Curl</option>
+            <option>American Shorthair</option>
+            <option>American Wirehair</option>
+            <option>...</option>
+          </select>
+
+          <select name="limit-list" class="limit-list hover-effect">
+            <option>Limit: 5</option>
+            <option selected>Limit: 10</option>
+            <option>Limit: 15</option>
+            <option>Limit: 20</option>
+          </select>
+
+          <button class="sort-button hover-effect">
+            <img 
+              src="./images/icons/sort-20.svg"
+              alt="sort"
+              class="sort-button__img"
+            >
+
+            <img 
+              src="./images/icons/sort-color-20.svg"
+              alt="sort"
+              class="sort-button-img sort-button__img--color"
+            >
+          </button>
+
+          <button class="sort-button hover-effect">
+            <img 
+              src="./images/icons/soft-revert-20.svg"
+              alt="soft-revert"
+              class="sort-button__img"
+            >
+
+            <img 
+              src="./images/icons/sort-revert-color-20.svg"
+              alt="soft-revert"
+              class="sort-button__img sort-button__img--color"
+            >
+          </button>
+        </div>
+
+        <div class="content-container__gallery">
+          <div class="gallery-block">
+            <a href="./breeds-selected.html" class="photo1">
+              <figure class="photo-position">
+                <img 
+                  src="https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg"
+                  alt=""
+                  class="photo"
+                >
+  
+                <figcaption class="photo-title">
+                  An elephant at sunset
+                </figcaption>
+              </figure>
+            </a>
+
+            <figure class="photo2 photo-position">
+              <img 
+                src="https://cdn2.thecatapi.com/images/hBXicehMA.jpg"
+                alt=""
+                class="photo photo2"
+              >
+
+              <figcaption class="photo-title">
+                An elephant at sunset
+              </figcaption>
+            </figure>
+
+            <figure class="photo3 photo-position">
+              <img 
+                src="https://cdn2.thecatapi.com/images/xnsqonbjW.jpg"
+                alt=""
+                class="photo photo3"
+              >
+
+              <figcaption class="photo-title">
+                An elephant at sunset
+              </figcaption>
+            </figure>
+
+            <figure class="photo4 photo-position">
+              <img 
+                src="https://cdn2.thecatapi.com/images/JFPROfGtQ.jpg"
+                alt=""
+                class="photo photo4"
+              >
+
+              <figcaption class="photo-title">
+                An elephant at sunset
+              </figcaption>
+            </figure>
+
+            <figure class="photo5 photo-position">
+              <img 
+                src="https://cdn2.thecatapi.com/images/8D--jCd21.jpg" 
+                alt=""
+                class="photo photo5"
+              >
+
+              <figcaption class="photo-title">
+                An elephant at sunset
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- <div class="gallery-block">
+            <img 
+              src="https://cdn2.thecatapi.com/images/k71ULYfRr.jpg"
+              alt=""
+              class="photo photo6"
+            >
+
+            <img 
+              src="https://cdn2.thecatapi.com/images/_6x-3TiCA.jpg"
+              alt=""
+              class="photo photo7"
+            >
+
+            <img 
+              src="https://cdn2.thecatapi.com/images/13MkvUreZ.jpg"
+              alt=""
+              class="photo photo8"
+            >
+            
+            <img 
+              src="https://cdn2.thecatapi.com/images/5AdhMjeEu.jpg"
+              alt=""
+              class="photo photo9"
+            >
+          
+            <img 
+              src="https://cdn2.thecatapi.com/images/O3btzLlsO.png"
+              alt=""
+              class="photo photo10"
+            >
+          </div> -->
+        </div>
+
+        <div class="breeds-button">
+          <a href="" class="breeds-button__nav link">
+            <img 
+              src="./images/icons/back-20.svg"
+              alt=""
+              class="nav-icon prev-icon nav-icon--color"
+            >
+
+            <img 
+              src="./images/icons/back-grey-20.svg"
+              alt=""
+              class="nav-icon prev-icon nav-icon--grey"
+            >
+
+            <img 
+              src="./images/icons/back-white-20.svg"
+              alt=""
+              class="nav-icon prev-icon nav-icon--white"
+            >
+            prev
+          </a>
+
+          <a href="" class="breeds-button__nav link">
+            next
+            <img 
+              src="./images/icons/back-20.svg"
+              alt=""
+              class="nav-icon next-icon nav-icon--color"
+            >
+
+            <img 
+              src="./images/icons/back-grey-20.svg"
+              alt=""
+              class="nav-icon next-icon nav-icon--grey"
+            >
+
+            <img 
+              src="./images/icons/back-white-20.svg"
+              alt=""
+              class="nav-icon next-icon nav-icon--white"
+            >
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
